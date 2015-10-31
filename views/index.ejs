@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+    * {
+      margin: 0;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      font-size: 0;
+    }
+
+  /*  .navbar-default {
+    background:transparent;
+    border: transparent;
+}
+
+  .navbar-default .navbar-brand {
+    color: white;
+  }
+
+  .navbar-default .navbar-right li a {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+  }*/
+
+
+    .photo {
+      display: block;
+      margin: 0;
+      height: 100%;
+    }
+
+    #navbar {
+        background-color:rgba(25,25,25,0.9);
+        background-size: cover;
+        box-shadow: 8px 1px 15px #000;
+        position: fixed;
+        width: 150px;
+        height: 100%;
+    }
+
+    #navbar h1 {
+      color: white;
+      text-align: right;
+      margin-right: 5px;
+    }
+
+    #navbar .navLinks {
+      margin-top: 30%;
+      text-align: right;
+    }
+
+    #navbar p {
+      font-size: 30px;
+      color: #fff;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding: 10px;
+      margin-top: 40px;
+      transition-duration: 0.3s;
+    }
+
+    #navbar p:hover {
+      color: #0080ff;
+      transition-duration: 0.3s;
+    }
+
+    #navbar .icons {
+      margin-left: 3px;
+      margin-top: 30%;
+    }
+
+    #navbar i {
+      color: white;
+      font-size: 40px;
+      margin: 10px;
+    }
+
+
+
+    #picture_1 {
+      background: url('/images/IMG_5585.JPG') no-repeat;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    #picture_2 {
+      background: url('/images/FullSizeRender.jpg') no-repeat;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    #picture_3 {
+      background: url('/images/IMG_5353.JPG') no-repeat;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    #picture_4 {
+      background: url('/images/IMG_4987.JPG') no-repeat;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    #picture_5 {
+      background: url('/images/IMG_9577.JPG') no-repeat;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    #picture_6 {
+      background: url('/images/IMG_3515.JPG') no-repeat;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    </style>
+  </head>
+  <body>
+
+
+          <% include partials/navbar.ejs %>
+          <div id="picture_1" class="photo" data-stellar-background-ratio="0.6"></div>
+          <div id="picture_2" class="photo" data-stellar-background-ratio="0.6"></div>
+          <div id="picture_3" class="photo" data-stellar-background-ratio="0.6"></div>
+          <div id="picture_4" class="photo" data-stellar-background-ratio="0.6"></div>
+          <div id="picture_5" class="photo" data-stellar-background-ratio="0.6"></div>
+          <div id="picture_6" class="photo" data-stellar-background-ratio="0.6"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="/javascripts/jquery.stellar.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        $(window).stellar();
+
+        $.stellar({
+          horizontalOffset: 0,
+          verticalOffset: 0,
+
+          scrollProperty: 'scroll',
+
+          horizontalscrolling: false,
+          verticalscrolling: false
+        });
+
+        $('table').stellar({
+          scrollProperty: 'scroll'
+        });
+      })
+
+    </script>
+  </body>
+</html>
